@@ -45,8 +45,9 @@ PrecompileTools.@setup_workload begin
 
         end
 
-        # We make sure that EOP are unloaded
-        eop_unload_data!()
+        # Reset the EOP state without emitting log output during package precompilation.
+        IERS_EOP_DATA.filename = ""
+        IERS_EOP.init = false
 
     end
 

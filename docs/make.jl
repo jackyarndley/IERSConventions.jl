@@ -1,11 +1,6 @@
 using Documenter, IERSConventions
-using Pkg
 
 const CI = get(ENV, "CI", "false") == "true"
-
-if CI
-    Pkg.add("Literate")
-end
 
 include("generate.jl")
 

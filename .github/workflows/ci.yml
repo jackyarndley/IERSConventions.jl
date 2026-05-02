@@ -12,9 +12,8 @@ jobs:
       fail-fast: false
       matrix:
         version:
-          - '1.8'
-          - '1.9'
-          - '1.10'
+          - '1.12'
+          - '1.13'
         os:
           - ubuntu-latest
         arch:
@@ -52,13 +51,10 @@ jobs:
           version: '1'
       - run: |
           julia --color=yes --project=docs -e '
-            import Pkg; Pkg.add("Documenter")
             using Pkg
-            Pkg.develop(PackageSpec(path=pwd()))
             Pkg.instantiate()'
       - run: |
           julia --color=yes --project=docs -e '
-            import Pkg; Pkg.add("Documenter")
             using Documenter: doctest
             using IERSConventions
             doctest(IERSConventions)'

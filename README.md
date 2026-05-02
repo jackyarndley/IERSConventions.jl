@@ -14,11 +14,11 @@ The aim of this package is to provide a set of standardised functions that allow
 
 ## Installation 
 
-This package can be installed using Julia's package manager: 
+This package requires Julia 1.12 or newer and can be installed using Julia's package manager: 
 ```julia
 julia> import Pkg
 
-julia> Pkg.add("IERSConventions.jl");
+julia> Pkg.add("IERSConventions");
 ```
 
 ## Documentation 

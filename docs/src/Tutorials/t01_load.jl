@@ -20,9 +20,9 @@ using IERSConventions
 
 finals = download(
     "https://datacenter.iers.org/data/latestVersion/finals.all.iau2000.txt",
-    "/tmp/finals2000A.txt"
+    joinpath(tempdir(), "finals2000A.txt")
 )
-filename = "/tmp/iau2000a"
+filename = joinpath(tempdir(), "iau2000a")
 eop_generate_from_txt(iers2010a, finals, filename)
 
 # This will create a `iau2000a.eop.dat` file to be used later.
