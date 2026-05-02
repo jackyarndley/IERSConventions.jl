@@ -12,6 +12,10 @@ ReferenceFrameRotations = "74f56ac7-18b3-5285-802d-d4bd4f104033"
 StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
 Tempo = "c33777b2-e695-4fae-9135-aeae8855dd81"
 
+[sources]
+JSMDUtils = {rev = "main", url = "https://github.com/jackyarndley/JSMDUtils.jl"}
+Tempo = {rev = "main", url = "https://github.com/jackyarndley/Tempo.jl"}
+
 [compat]
 DelimitedFiles = "1"
 PrecompileTools = "1"
